@@ -1,0 +1,180 @@
+html {
+	background-color: #EEEEEE;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px #CFD5DC;
+	max-width: 720px;
+}
+
+.NextPayment {
+	border-bottom: 1px solid #EEEEEE;
+	margin: 20px;
+	padding-bottom: 20px;
+}
+
+.PaymentMethod {
+	border-bottom: 1px solid #EEEEEE;
+	margin: 20px;
+	padding-bottom: 20px;
+}
+
+header {
+	padding: 20px 0px;
+	font-weight: bold;
+}
+
+img {
+	float: left;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	text-align: right;
+}
+
+p {
+	margin: 0 auto;
+	padding: 5px;
+	font-size: 10pt;
+	line-height: 70%;
+}
+
+.cost {
+	font-size: 16pt;
+}
+
+button {
+	height: 35px;
+	width: 30%;
+	font-family: 'Open Sans', sans-serif;
+	background-color: transparent;
+	border: 1px #3B90DD solid;
+	color: #3B90DD;
+	border-radius: 4px;
+	margin: 0 0 5px 0;
+	cursor: pointer;
+}
+
+button:hover {background-color: #3B90DD; color: #FFFFFF;}
+
+button:active {
+  background-color: #3B90DD;
+  transform: translateY(4px);
+}
+
+.MobileButtons {
+	display: none;
+}
+
+
+/*Payment Schedule styling*/
+
+.PaymentSchedule {
+	margin: 20px;
+}
+
+.PaymentScheduleMobile {
+	display: none;
+}
+
+.payment {
+	text-align: left;
+	width: 100%;
+	font-size: 0.8rem;
+	padding-bottom: 20px;
+}
+
+th, td, tr {
+	border-bottom: 1px solid #EEEEEE;
+	padding: 10px 0;
+
+}
+
+.active {
+	font-weight: bold;
+}
+
+.paid {
+	color: #26BD7F;
+}
+
+.planned {
+	color: #848484;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 644px) {
+	button {
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.PaymentSchedule {
+		display:none;
+	}
+
+	.PaymentScheduleMobile {
+		display: block;
+		margin: 20px;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	button {
+		display: none;
+	}
+
+	.MobileButtons {
+		display: inline-block;
+		height: 75px;
+		width: 49%;
+		font-family: 'Open Sans', sans-serif;
+		background-color: transparent;
+		border: 1px #3B90DD solid;
+		color: #3B90DD;
+		border-radius: 4px;
+		margin: 20px 0 5px 0;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 442px) {
+	th, td { 
+	text-align: center;
+	}
+}
+
+@media screen and (max-width: 422px) {
+	.PaymentScheduleMobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 404px) {
+	body {
+		text-align: center;
+	}
+
+	img, .left {
+		float: none;
+		margin: 10px;
+	}
+
+	.right {
+		text-align: center;
+	}
+
+	.MobileButtons {
+		width: 100%;
+	}
+
+}
